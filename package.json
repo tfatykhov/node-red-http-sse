@@ -1,0 +1,16 @@
+{
+	"name": "http-sse",
+	"version": "0.0.1",
+	"description": "Sample node to stream SSE messages from HTTP",
+	"dependencies": {
+		"eventemitter2": "*",
+		"eventsource": "*"
+	},
+	"keywords": [ "node-red" ],
+	"license": "BSD",
+	"node-red": {
+		"nodes": {
+			"http-sse": "http-sse.js"
+		}
+	}
+}

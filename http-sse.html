@@ -1,0 +1,38 @@
+<script type="text/x-red" data-template-name="http-sse">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-remote"><i class="fa fa-dot-circle-o"></i> Remote</label>
+        <input type="text" id="node-input-remote" placeholder="https://http.cloud.tiny-mesh.com/v1/message-query" />
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-events"><i class="fa fa-dot-circle-o"></i> Events</label>
+        <input type="text" id="node-input-events" placeholder="message" />
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="http-sse">
+    <p>Opens a SSE connection to host</p>
+</script>
+
+<script type="text/javascript">
+    RED.nodes.registerType('http-sse', {
+        category: 'input',
+        color:    '#fdf0c2',
+        defaults: {
+            name:   {value: ""},
+            remote: {value:"",required:true},
+            events: {value:"message",required:true},
+        },
+        inputs: 0,
+        outputs: 1,
+        icon: "alert.png",
+        label: function() {
+            return this.name || this.remote;
+        }
+    });
+</script>
