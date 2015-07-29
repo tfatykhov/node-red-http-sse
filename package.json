@@ -1,5 +1,5 @@
 {
-	"name": "http-sse",
+	"name": "node-red-contrib-http-sse",
 	"version": "0.0.1",
 	"description": "Sample node to stream SSE messages from HTTP",
 	"dependencies": {
