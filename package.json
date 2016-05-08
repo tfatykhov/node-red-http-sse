@@ -1,7 +1,7 @@
 {
 	"name": "node-red-contrib-http-sse",
-	"version": "0.0.1",
-	"description": "Sample node to stream SSE messages from HTTP",
+	"version": "0.0.2",
+	"description": "Sample node to stream SSE messages from HTTP accepting input parameters",
 	"dependencies": {
 		"eventemitter2": "*",
 		"eventsource": "*"
